@@ -1,7 +1,9 @@
 package com.example.obar.model
 
-import com.google.android.gms.maps.model.LatLng
+import androidx.annotation.Keep
+import androidx.compose.runtime.Immutable
 
+@Keep
 data class UserRemote(
     val region: Int,
     val address: String,
@@ -14,7 +16,8 @@ data class UserRemote(
     val gender: String
 )
 
-
+@Keep
+@Immutable
 data class UserLocal(
     val address: String,
     val first_name: String,
